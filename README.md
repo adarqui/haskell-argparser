@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/adarqui/argparser-hs.svg?branch=master)](https://travis-ci.org/adarqui/argparser-hs)
+
 # Getting started
 
 Parse command line style arguments from any string.

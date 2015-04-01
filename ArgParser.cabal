@@ -1,0 +1,40 @@
+name:                ArgParser
+version:             0.0.1
+synopsis:            Library to parse a string consisting of arguments, in to a list of arguments.
+description:
+    When you need to store a raw string of command-like arguments, then parse it into a list of arguments.
+homepage:            https://github.com/adarqui/argparser-hs
+bug-reports:         https://github.com/adarqui/argparser-hs/issues
+license:             MIT
+license-file:        LICENSE
+author:              Andrew Darqui
+maintainer:          andrew.darqui@gmail.com
+category:            Data
+build-type:          Simple
+cabal-version:       >=1.18
+homepage:            https://github.com/adarqui/argparser-hs
+bug-reports:         https://github.com/adarqui/argparser-hs/issues
+
+library
+    exposed-modules:     
+                     Data.ArgParser
+    build-depends:
+                     base >= 4
+    hs-source-dirs:  src
+    ghc-options:     -Wall
+    default-language: Haskell2010
+
+test-suite tests
+    type:            detailed-0.9
+    test-module:     TestArgParser
+    build-depends:
+                     base >= 4,
+                     Cabal >= 1.20.0,
+                     ArgParser == 0.0.1
+    hs-source-dirs:  tests
+    ghc-options:     -Wall
+    default-language: Haskell2010
+
+source-repository head
+  type:              git
+  location:          https://github.com/adarqui/argparser-hs.git

@@ -1,6 +1,8 @@
-all:
-	cabal sandbox init
-	cabal install
+build:
+	stack build --fast
 
-test:
-	cabal configure --enable-tests -fF00 && cabal build && cabal test
+clean:
+	stack clean
+
+tests:
+	stack test --fast

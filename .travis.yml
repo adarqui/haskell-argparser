@@ -42,8 +42,8 @@ notifications:
   irc:
     channels:
       - "chat.freenode.net#jumping"
-    on_success: change # [always|never|change] default: always
-    on_failure: change # default: always
+    on_success: always # [always|never|change] default: always
+    on_failure: always # default: always
     use_notice: true
     skip_join: true
     # If you enable skip_join, remember to remove the NO_EXTERNAL_MSGS flag (n) on the IRC channel(s) the bot notifies.

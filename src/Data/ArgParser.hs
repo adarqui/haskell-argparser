@@ -1,44 +1,14 @@
 {-# LANGUAGE RecordWildCards #-}
 
 module Data.ArgParser (
-  ParseOptions (..),
-  defaultParseOptions,
+  module A,
   argParser
 ) where
 
 
 
-import           Data.Monoid ((<>))
-
-
-
-data ParseStateType
-  = NONE
-  | CHAR
-  | QUOTE
-
-
-
-data ParseState = ParseState {
-  quoteChar :: Char
-}
-
-
-
-data ParseOptions = ParseOptions {
-  spaces :: String,
-  quotes :: String
-}
-
-
-
-defaultParseOptions :: ParseOptions
-defaultParseOptions = ParseOptions { spaces = " ", quotes = "\"'" }
-
-
-
-defaultParseState :: ParseState
-defaultParseState = ParseState { quoteChar = '"' }
+import           Data.ArgParser.Types as A
+import           Data.Monoid          ((<>))
 
 
 

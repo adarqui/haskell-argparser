@@ -16,10 +16,12 @@ homepage:            https://github.com/adarqui/haskell-argparser
 bug-reports:         https://github.com/adarqui/haskell-argparser/issues
 
 library
-    exposed-modules:
-                     Data.ArgParser
+    exposed-modules: Data.ArgParser
+                   , Data.ArgParser.Text
+                   , Data.ArgParser.Types
     build-depends:
                      base >= 4
+                   , text
     hs-source-dirs:  src
     ghc-options:     -Wall -Werror
     default-language: Haskell2010
@@ -29,9 +31,10 @@ test-suite tests
     main-is:         Spec.hs
     other-modules:   Data.ArgParserSpec
     build-depends:
-                     base >= 4,
-                     hspec,
-                     haskell-argparser
+                     base >= 4
+                   , hspec
+                   , text
+                   , haskell-argparser
     hs-source-dirs:  test
     ghc-options:     -Wall -Werror
     default-language: Haskell2010

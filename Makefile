@@ -6,3 +6,6 @@ clean:
 
 tests:
 	stack test --fast
+
+ghci:
+	stack ghci haskell-argparser

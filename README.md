@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/adarqui/argparser-hs.svg?branch=master)](https://travis-ci.org/adarqui/argparser-hs)
+[![Build Status](https://travis-ci.org/adarqui/haskell-argparser.svg?branch=master)](https://travis-ci.org/adarqui/haskell-argparser)
 
 # Getting started
 
